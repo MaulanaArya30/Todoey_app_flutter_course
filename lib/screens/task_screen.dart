@@ -60,7 +60,7 @@ class TaskScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  '${Provider.of<Data>(context).taskCount} tushks lol just a test',
+                  '${Provider.of<Data>(context).taskCount} tushks lol just a test 2',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
