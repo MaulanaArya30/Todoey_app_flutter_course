@@ -3,7 +3,7 @@ import 'package:todoey_app_flutter_course/models/task.dart';
 
 class Data extends ChangeNotifier {
   List<Task> tasks = [
-    Task(name: 'Buy Milk 2'),
+    Task(name: 'Buy Milk'),
     Task(name: 'Buy Bread'),
     Task(name: 'Buy Eggs'),
   ];
