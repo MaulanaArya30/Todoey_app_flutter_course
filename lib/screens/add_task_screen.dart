@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AddTaskScreen extends StatelessWidget {
-  final Function addTaskCallback;
+  // final Function addTaskCallback;
 
-  AddTaskScreen({required this.addTaskCallback});
+  // AddTaskScreen({required this.addTaskCallback});
 
   final taskController = TextEditingController();
 
@@ -41,7 +41,7 @@ class AddTaskScreen extends StatelessWidget {
             MaterialButton(
               color: Colors.lightBlueAccent,
               onPressed: () {
-                addTaskCallback(taskController.text);
+                //addTaskCallback(taskController.text);
                 Navigator.pop(context);
               },
               child: Text(
