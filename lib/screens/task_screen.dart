@@ -25,10 +25,6 @@ class TaskScreen extends StatelessWidget {
               ),
             ),
           );
-          // showModalBottomSheet(
-          //   context: context,
-          //   builder: (context) => AddTaskScreen(addTaskCallback: addTask),
-          // );
         },
         backgroundColor: Colors.lightBlueAccent,
         child: Icon(Icons.add),

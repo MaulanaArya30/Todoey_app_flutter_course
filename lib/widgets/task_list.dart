@@ -13,7 +13,7 @@ class TaskList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<Data>(builder: (context, data, child) {
       return ListView.builder(
-        itemCount: data.tasks.length,
+        itemCount: data.taskCount,
         itemBuilder: (context, index) {
           return TaskTile(
             taskTitle: data.tasks[index].name,

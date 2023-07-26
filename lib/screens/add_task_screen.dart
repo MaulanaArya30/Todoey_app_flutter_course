@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:todoey_app_flutter_course/models/data.dart';
 
 class AddTaskScreen extends StatelessWidget {
   // final Function addTaskCallback;
@@ -42,6 +44,10 @@ class AddTaskScreen extends StatelessWidget {
               color: Colors.lightBlueAccent,
               onPressed: () {
                 //addTaskCallback(taskController.text);
+
+                Provider.of<Data>(context, listen: false).addTask(taskController
+                    .text); //need to add listen: fase to avoid error
+
                 Navigator.pop(context);
               },
               child: Text(
@@ -51,23 +57,6 @@ class AddTaskScreen extends StatelessWidget {
                 ),
               ),
             ),
-            // Container(
-            //   height: 50,
-            //   child: TextButton(
-            //     onPressed: () {
-            //       addTaskCallback(taskController.text);
-            //       Navigator.pop(context);
-            //     },
-            //     //Navigator.pop(context);
-
-            //     child: Text(
-            //       'Cancel',
-            //       style: TextStyle(
-            //         color: Colors.lightBlueAccent,
-            //       ),
-            //     ),
-            //   ),
-            // ),
           ],
         ),
       ),
